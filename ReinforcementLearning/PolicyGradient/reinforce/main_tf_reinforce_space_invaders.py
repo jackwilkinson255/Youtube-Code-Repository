@@ -23,7 +23,7 @@ def stack_frames(stacked_frames, frame, buffer_size):
 if __name__ == '__main__':
     load_checkpoint = False
     agent = PolicyGradientAgent(ALPHA=0.001, GAMMA=0.9, n_actions=6, fc1=256,
-                                chkpt_dir='tmp/checkpoint-newG-0p001', gpu={'GPU':1})
+                                chkpt_dir='/tmp/checkpoint-newG-0p001', gpu={'GPU':1})
     filename = 'space-invaders-alpha001-newGcalc.png'
     print('will use ', filename, ' and ', agent.gpu)
     if load_checkpoint:
